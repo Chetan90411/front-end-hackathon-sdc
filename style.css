@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 html, body {
@@ -10,11 +11,10 @@ html, body {
 }
 
 header {
-    width: 100%;
+    margin: auto 8vw;
 }
 
 nav {
-    display: flex;
     justify-content: space-between;
     align-items: center;
 }
@@ -22,6 +22,33 @@ nav {
 nav ul li a {
     text-decoration: none;
     color: white;
+    font-size: 1rem;
+    transition: all 0.2s ease-out;
 }
 
-.logo {}
+nav ul li a:hover {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.logo img{
+    height: 6rem;
+    padding: 1rem;
+    transition: all 0.2s ease-out;
+}
+
+.logo img:hover {
+    padding: 0.6rem;
+}
+
+nav ul {
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-btn {
+    border: none;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+}
