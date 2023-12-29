@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
+  overflow: hidden;
 }
 
 html,
@@ -14,6 +15,9 @@ body {
 
 header {
   margin: auto 6rem;
+  margin-bottom: 2rem;
+  background-color: #000;
+  height: 5rem;
 }
 
 nav {
@@ -62,7 +66,7 @@ nav ul {
 
 #sect-1 {
   padding: 2rem 6rem;
-  height: 80vh;
+  max-height: 70vh;
 }
 .left {
   width: 50%;
@@ -82,10 +86,7 @@ nav ul {
 
 .btn-primary {
     border-radius: 2rem;
-    font-size: 1.5rem;
     background: linear-gradient(rgb(138, 236, 138), rgb(204, 204, 115));
-    margin-top: 1rem;
-    margin-right: 1rem;
 }
 
 .btn-primary a {
@@ -100,15 +101,24 @@ nav ul {
     margin-bottom: 2rem;
 }
 
+.sect-1-btns {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
 .sect-1-btns button {
     padding: 1rem 3rem;
+    font-size: 1.5rem;
 }
 
 .sect-1-btns a {
     text-decoration: none;
     transition: all 0.15s ease-out;
 }
-.sect-1-btns a:hover {
+.sect-1-btns button:hover {
     font-size: 1.6rem;    
 }
 
@@ -120,10 +130,55 @@ nav ul {
 
 .btn-secondary a{
     color: white;
-    font-size: 1.5rem;
 }
 
 .right img {
     height: 600px;
     clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+
+@media (max-width: 1390px) {
+
+    .sect-1 {
+        padding: 1rem;
+    }
+    .left h1 {
+        font-size: 3rem;
+    }
+    .left p {
+        font-size: 1rem;
+    }
+    .right img {
+        height: 400px;
+    }
+    .sect-1-btns button {
+        padding: 0.5rem 1.5rem;
+    }
+    .sect-1-btns button {
+        font-size: 1rem;
+    }
+     .sect-1-btns button:hover {
+        font-size: 1.1rem;
+    }
+}
+@media (max-width: 1000px) {
+    .sect-1 {
+        padding: 1rem;
+    }
+    .left h1 {
+        font-size: 1.5rem;
+    }
+    .left p {
+        font-size: 0.5rem;
+    }
+    .right img {
+        height: 250px;
+    }
+    .sect-1-btns button {
+        font-size: 0.6rem;
+    }
+    .sect-1-btns button:hover {
+        font-size: 0.7rem;
+    }
 }
