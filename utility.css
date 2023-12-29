@@ -2,3 +2,10 @@
     display: flex;
 }
 
+.m-1-b {
+    margin-bottom: 1rem;
+}
+
+.m-1-r{
+    margin-right: 1rem;
+}

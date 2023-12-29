@@ -5,54 +5,125 @@
   font-family: sans-serif;
 }
 
-html, body {
-   width: 100%;
-   background-color: #000;
+html,
+body {
+  width: 100%;
+  background-color: #000;
+  color: white;
 }
 
 header {
-    margin: auto 8vw;
+  margin: auto 6rem;
 }
 
 nav {
-    justify-content: space-between;
-    align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 1rem;
-    transition: all 0.3s ease-out;
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: all 0.15s ease-out;
 }
 
 nav ul li a:hover {
-    font-size: 1.1rem;
-    font-weight: 700;
-    text-decoration: underline;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-decoration: underline;
 }
 
-.logo img{
-    height: 6rem;
-    padding: 1rem;
-    transition: all 0.2s ease-out;
+.logo img {
+  height: 6rem;
+  padding: 1rem;
+  transition: all 0.2s ease-out;
 }
 
 .logo img:hover {
-    padding: 0.6rem;
+  padding: 0.6rem;
 }
 
 nav ul {
-    gap: 4rem;
-    justify-content: center;
-    align-items: center;
+  list-style: none;
+  gap: 4rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav-btn {
-    border: 4px solid white;
-    outline: none;
-    border-radius: 1.5rem;
-    padding: 0.5rem 1rem;
-    background-color: #000;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border: 4px solid white;
+  outline: none;
+  border-radius: 1.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #000;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+#sect-1 {
+  padding: 2rem 6rem;
+  height: 80vh;
+}
+.left {
+  width: 50%;
+  padding: 2rem;
+}
+
+.left h1 {
+  font-size: 5rem;
+  text-shadow: 3px 3px 2px blue;
+}
+
+.left p {
+    text-shadow: 2px 2px 2px green;
+  font-size: 2rem;
+  width: 75%;
+}
+
+.btn-primary {
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    background: linear-gradient(rgb(138, 236, 138), rgb(204, 204, 115));
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+
+.btn-primary a {
+    color: black;
+    background: linear-gradient(rgb(138, 236, 138), rgb(204, 204, 115));
+}
+
+#sect-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.sect-1-btns button {
+    padding: 1rem 3rem;
+}
+
+.sect-1-btns a {
+    text-decoration: none;
+    transition: all 0.15s ease-out;
+}
+.sect-1-btns a:hover {
+    font-size: 1.6rem;    
+}
+
+.btn-secondary {
+    border: 2px solid white;
+    border-radius: 2rem;
+    background-color: black;
+}
+
+.btn-secondary a{
+    color: white;
+    font-size: 1.5rem;
+}
+
+.right img {
+    height: 600px;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
 }
