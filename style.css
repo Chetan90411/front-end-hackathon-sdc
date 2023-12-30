@@ -23,12 +23,17 @@ header {
   margin: auto 6rem;
   margin-bottom: 1rem;
   background-color: #000;
-  height: 5rem;
+  height: 6rem;
+  position: fixed;
+  z-index: 10;
+  top: 0px;
+  width: 100vw;
 }
 
 nav {
   justify-content: space-between;
   align-items: center;
+  width: 90vw;
 }
 
 nav ul li a {
@@ -71,6 +76,7 @@ nav ul {
 }
 
 #sect-1 {
+  margin-top: 4.5rem;
   padding: 2rem 6rem;
   max-height: 80vh;
   overflow: hidden;
@@ -306,4 +312,12 @@ button a {
 
 ::-webkit-scrollbar-track {
   background-color: #1a1a1a; /* Dark color for the track */
+}
+
+footer {
+  background-color: #33333397;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
 }
