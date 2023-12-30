@@ -1,9 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
-  overflow: hidden;
+  font-family: "Poppins", sans-serif;
 }
 
 html,
@@ -13,9 +14,13 @@ body {
   color: white;
 }
 
+:root {
+  --font-size-primary: 3.5rem;
+}
+
 header {
   margin: auto 6rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   background-color: #000;
   height: 5rem;
 }
@@ -66,7 +71,8 @@ nav ul {
 
 #sect-1 {
   padding: 2rem 6rem;
-  max-height: 70vh;
+  max-height: 80vh;
+  overflow: hidden;
 }
 .left {
   width: 50%;
@@ -74,111 +80,214 @@ nav ul {
 }
 
 .left h1 {
-  font-size: 5rem;
+  font-size: var(--font-size-primary);
   text-shadow: 3px 3px 2px blue;
 }
 
 .left p {
-    text-shadow: 2px 2px 2px green;
+  text-shadow: 2px 2px 2px green;
   font-size: 2rem;
   width: 75%;
 }
 
 .btn-primary {
-    border-radius: 2rem;
-    background: linear-gradient(rgb(138, 236, 138), rgb(204, 204, 115));
+  border-radius: 2rem;
+  background: linear-gradient(rgb(138, 236, 138), rgb(204, 204, 115));
 }
 
 .btn-primary a {
-    color: black;
-    background: linear-gradient(rgb(138, 236, 138), rgb(204, 204, 115));
+  color: black;
+  background: linear-gradient(rgb(138, 236, 138), rgb(204, 204, 115));
 }
 
 #sect-1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
 }
 
 .sect-1-btns {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .sect-1-btns button {
-    padding: 1rem 3rem;
-    font-size: 1.5rem;
+  padding: 1rem 3rem;
+  font-size: 1.5rem;
+  transition: all 0.15s ease-out;
 }
 
-.sect-1-btns a {
-    text-decoration: none;
-    transition: all 0.15s ease-out;
+button a {
+  text-decoration: none;
 }
 .sect-1-btns button:hover {
-    font-size: 1.6rem;    
+  transform: scale(1.1);
 }
 
 .btn-secondary {
-    border: 2px solid white;
-    border-radius: 2rem;
-    background-color: black;
+  border: 2px solid white;
+  border-radius: 2rem;
+  background-color: black;
 }
 
-.btn-secondary a{
-    color: white;
+.btn-secondary a {
+  color: white;
 }
 
 .right img {
-    height: 600px;
-    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  height: 600px;
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  transition: all 0.3s ease;
 }
 
+.right img:hover {
+  transform: scale(1.1);
+}
+
+/* section-2 */
+#sect-2 {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /* padding: 0rem 10vw; */
+  margin: 3rem 10vw;
+}
+
+.sect-2-left {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+}
+
+.artist {
+  margin: 2rem;
+  height: 11rem;
+  position: relative;
+  bottom: 3rem;
+  border-radius: 20px;
+  background-color: rgba(17, 122, 235, 0.097);
+  backdrop-filter: blur(30px);
+  box-shadow: 5px 5px 50px rgba(100, 113, 232, 0.3);
+  transition: all 0.3s ease-in;
+}
+
+.artist img {
+  height: 13rem;
+  width: 13.5rem;
+  transform: translateY(-15%);
+  transition: all 0.3s ease-in;
+}
+
+.artist img:hover {
+  transform: scale(1.1);
+  transform: translateY(-16%);
+}
+
+.artist:hover {
+  transform: scale(1.1);
+}
+
+.sect-2-right {
+  width: 100%;
+  height: 80vh;
+}
+
+.sect-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 8vw;
+}
+.sect-3 h1 {
+  font-size: 4.5rem;
+  text-shadow: 3px 3px 2px blue;
+}
+.sect-3 p {
+  font-size: 2.5rem;
+  text-shadow: 3px 3px 2px green;
+}
+
+.sub-btn {
+  border-radius: 2rem;
+  font-size: var(--font-size-primary);
+  background: linear-gradient(rgb(138, 236, 138), rgb(204, 204, 115));
+  padding: 1rem 3rem;
+  font-size: 1.5rem;
+  transition: all 0.15s ease-in;
+}
+
+.sub-btn a {
+  color: black;
+  background: linear-gradient(rgb(138, 236, 138), rgb(204, 204, 115));
+}
+
+.sub-btn:hover {
+  transform: scale(1.1);
+}
 
 @media (max-width: 1390px) {
-
-    .sect-1 {
-        padding: 1rem;
-    }
-    .left h1 {
-        font-size: 3rem;
-    }
-    .left p {
-        font-size: 1rem;
-    }
-    .right img {
-        height: 400px;
-    }
-    .sect-1-btns button {
-        padding: 0.5rem 1.5rem;
-    }
-    .sect-1-btns button {
-        font-size: 1rem;
-    }
-     .sect-1-btns button:hover {
-        font-size: 1.1rem;
-    }
+  .sect-1 {
+    padding: 1rem;
+  }
+  .left h1 {
+    font-size: 3rem;
+  }
+  .left p {
+    font-size: 1rem;
+  }
+  .right img {
+    height: 400px;
+  }
+  .right img:hover {
+    height: 450px;
+  }
+  .sect-1-btns button {
+    padding: 0.5rem 1.5rem;
+  }
+  .sect-1-btns button {
+    font-size: 1rem;
+  }
+  .sect-2-left {
+    flex-wrap: wrap;
+  }
+  .sect-3 h1 {
+    font-size: 3.5rem;
+  }
+  .sect-3 p {
+    font-size: 1.5rem;
+  }
 }
 @media (max-width: 1000px) {
-    .sect-1 {
-        padding: 1rem;
-    }
-    .left h1 {
-        font-size: 1.5rem;
-    }
-    .left p {
-        font-size: 0.5rem;
-    }
-    .right img {
-        height: 250px;
-    }
-    .sect-1-btns button {
-        font-size: 0.6rem;
-    }
-    .sect-1-btns button:hover {
-        font-size: 0.7rem;
-    }
+  .sect-1 {
+    padding: 1rem;
+  }
+  .left h1 {
+    font-size: 1.8rem;
+  }
+  .left p {
+    font-size: 0.5rem;
+  }
+  .right img {
+    height: 250px;
+  }
+  .right img:hover {
+    height: 300px;
+  }
+  .sect-1-btns button {
+    font-size: 0.6rem;
+  }
+  .sect-2-left {
+    flex-wrap: wrap;
+  }
+  .sect-3 h1 {
+    font-size: 2rem;
+  }
+  .sect-3 p {
+    font-size: 1rem;
+  }
 }
